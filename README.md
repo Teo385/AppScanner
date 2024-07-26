@@ -14,7 +14,7 @@
 
 ###
 
-<h2 align="left">Este Repo esta hecho especialmente con Java</h2>
+<h2 align="left">Este Repo esta hecho especialmente con Kotlin</h2>
 
 ###
 
@@ -68,23 +68,23 @@ AppScanner es una aplicación Android diseñada para escanear códigos de barras
    private lateinit var imagePickerLauncher: ActivityResultLauncher<Intent>
    ```
 3. **Método `onCreate`**:
-    - Inicializa el binding y configura los botones de escaneo.
-    - Configura los lanzadores de actividades para escanear con la cámara y seleccionar imágenes de la galería.
+   - Inicializa el binding y configura los botones de escaneo.
+   - Configura los lanzadores de actividades para escanear con la cámara y seleccionar imágenes de la galería.
 
 4. **Método `navigateToResult`**:
-    - Navega a `ResultScannerActivity` con el resultado escaneado.
+   - Navega a `ResultScannerActivity` con el resultado escaneado.
 
 5. **Método `initScanner`**:
-    - Configura las opciones de escaneo y lanza el escáner.
+   - Configura las opciones de escaneo y lanza el escáner.
 
 6. **Método `selectImageFromGallery`**:
-    - Lanza la galería de imágenes para seleccionar una.
+   - Lanza la galería de imágenes para seleccionar una.
 
 7. **Método `scanImage`**:
-    - Procesa la imagen seleccionada y escanea el código de barras o QR en ella.
+   - Procesa la imagen seleccionada y escanea el código de barras o QR en ella.
 
 8. **Método `formatResult`**:
-    - Formatea el resultado del escaneo para una mejor presentación.
+   - Formatea el resultado del escaneo para una mejor presentación.
 
 ## Ejemplo de Formateo de Resultados
 
@@ -119,12 +119,11 @@ private fun formatResult(result: String): String {
 ## Cómo Usar
 
 1. **Escanear con la cámara**:
-    - Presiona el botón de escanear para iniciar la cámara y escanear un código de barras o QR.
+   - Presiona el botón de escanear para iniciar la cámara y escanear un código de barras o QR.
 
 2. **Escanear desde una imagen**:
-    - Presiona el botón de seleccionar imagen para elegir una imagen de la galería y escanear el código contenido en ella.
+   - Presiona el botón de seleccionar imagen para elegir una imagen de la galería y escanear el código contenido en ella.
 
 ## Contribuciones
 Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para sugerencias y mejoras.
-
 
