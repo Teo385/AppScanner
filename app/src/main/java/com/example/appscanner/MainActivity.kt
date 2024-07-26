@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnScaneer.setOnClickListener { initScanner() }
-        binding.btnScaneerImg.setOnClickListener { selectImageFromGallery() }
+        binding.btnScan.setOnClickListener { initScanner() }
+        binding.btnScanImage.setOnClickListener { selectImageFromGallery() }
 
         scanLauncher = registerForActivityResult(ScanContract()) { result ->
             if (result.contents == null) {
@@ -116,6 +116,8 @@ class MainActivity : AppCompatActivity() {
         formattedResult = formattedResult.replace("\n", " ")
 
         val parts = formattedResult.split(":")
+
+
         if (parts.size >= 5) {
             val code = parts[0]
             val idNumber = parts[1]
